@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2024-01-15
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Our latest paper "A Characterization Theorem for Equivariant Networks with Point-wise Activations" as been accepted at ICLR 2024! 📘
