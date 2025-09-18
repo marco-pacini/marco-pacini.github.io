@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our latest paper "A Characterization Theorem for Equivariant Networks with Point-wise Activations" has been accepted at ICLR 2024!
+_A Characterization Theorem for Equivariant Networks with Point-wise Activations_ was accepted at ICLR 2024.
