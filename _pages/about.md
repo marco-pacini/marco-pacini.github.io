@@ -2,12 +2,12 @@
 layout: about
 title: About
 permalink: /
-subtitle: PhD Candidate at University of Trento & Fondazione Bruno Kessler
+subtitle: Researcher at Fondazione Bruno Kessler, Trento, Italy
 
 profile:
   align: right
   image: personal-pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"

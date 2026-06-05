@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-*Separation Power of Equivariant Neural Networks* has been accepted to ICLR 2025!
+*Separation Power of Equivariant Neural Networks* was accepted to ICLR 2025!
 
