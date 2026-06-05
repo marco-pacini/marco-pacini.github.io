@@ -7,10 +7,18 @@ first_name: Marco
 middle_name:
 last_name: Pacini
 email: mpacini@fbk.eu
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
+description: >
+  Marco Pacini is a researcher working on the theoretical foundations
+  of geometric deep learning and equivariant machine learning, with a
+  focus on the construction, expressivity, and approximation capabilities
+  of equivariant neural networks.
 footer_text: >
 
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: >
+  Marco Pacini, geometric deep learning, equivariant neural networks,
+  equivariant machine learning, equivariant networks, point-wise activations,
+  pointwise activations, symmetry, expressivity, universality,
+  approximation theory, machine learning, deep learning
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 📖 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -56,9 +64,9 @@ max_width: 800px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: assets/img/personal-pic.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -115,15 +123,15 @@ google_analytics: # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
 cronitor_analytics: # cronitor RUM analytics site ID (format: XXXXXXXXX)
 
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
-google_site_verification: # your google-site-verification ID (Google Search Console)
+google_site_verification: PyIeXRb-KleFvfp_HqPAOLd1qHiiuAnXNXWWSb8zBDk # your google-site-verification ID (Google Search Console)
 bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: notes # blog_name will be displayed in your blog page
+blog_description: Notes on geometric deep learning and equivariant machine learning
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -150,7 +158,7 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
@@ -286,8 +294,8 @@ display_categories: ["blockquotes"] # these categories will be displayed on the 
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Pacini]
+  first_name: [Marco, M.]
 
   style: apa
   locale: en
@@ -354,7 +362,7 @@ enable_publication_thumbnails: true
 # These are the defaults
 external_links:
   enabled: true
-  rel: external nofollow noopener
+  rel: external noopener
   target: _blank
   exclude:
 
@@ -395,7 +403,7 @@ lazy_loading_images: true # enables lazy loading of images (recommended)
 
 enable_google_analytics: false # enables google analytics
 enable_cronitor_analytics: false # enables cronitor RUM analytics
-enable_google_verification: false # enables google site verification
+enable_google_verification: true # enables google site verification
 enable_bing_verification: false # enables bing site verification
 enable_masonry: true # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
