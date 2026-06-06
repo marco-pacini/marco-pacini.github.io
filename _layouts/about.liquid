@@ -48,14 +48,22 @@ layout: default
 
     <div class="about-main-grid">
       <!-- Selected papers -->
-      {% if page.selected_papers %}
-        <section class="about-selected-publications">
-          <h2>
-            <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
-          </h2>
-          {% include selected_papers.liquid %}
-        </section>
-      {% endif %}
+      <section class="about-selected-publications">
+        <h2>
+          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">
+            Selected Publications
+          </a>
+        </h2>
+
+        <h3 class="publication-topic">Approximation Theory of Equivariant Neural Networks</h3>
+        <div class="publications">
+          {% bibliography --group_by none --query @*[topic=approximation-theory] %}
+        </div>
+        <h3 class="publication-topic">Characterization of Equivariant Activations</h3>
+        <div class="publications">
+          {% bibliography --group_by none --query @*[topic=constructive-nonlinearities] %}
+        </div>
+      </section>
 
       <!-- News -->
       {% if page.news and site.announcements.enabled %}
