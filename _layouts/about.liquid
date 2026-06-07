@@ -30,15 +30,21 @@ layout: default
   {% endif %}
 
   <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">
-          {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}
-        </span>
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
+    <div class="about-title-row">
+      <h1 class="post-title">
+        {% if site.title == 'blank' %}
+          <span class="font-weight-bold">
+            {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}
+          </span>
+        {% else %}
+          {{ site.title }}
+        {% endif %}
+      </h1>
+
+      <span class="title-social-divider" aria-hidden="true"></span>
+
+      {% include header_social.liquid %}
+    </div>
 
     <p class="desc"><b>{{ page.subtitle }}</b></p>
   </header>
@@ -75,14 +81,5 @@ layout: default
         </aside>
       {% endif %}
     </div>
-
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
   </article>
 </div>
